@@ -1,3 +1,10 @@
+" Checking for VimPlug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 set number
 
 syntax on
@@ -28,7 +35,7 @@ call plug#end()
 " === PLGINS END ===
 
 " Poweline font
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 " === RUST ===
 " format on save
@@ -36,6 +43,7 @@ let g:rustfmt_autosave = 1
 
 " default theme
 colorscheme gruvbox
+set bg=dark
 
 " TextEdit might fail if hidden is not set.
 set hidden
