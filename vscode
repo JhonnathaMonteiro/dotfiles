@@ -1,0 +1,50 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+
+    // Eslint on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+    "eslint.validate": ["typescript", "typescriptreact"],
+    
+    // Remove Minimap
+    "editor.minimap.enabled": false,
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "editor.tabSize": 2,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vs-kubernetes": {
+      "vs-kubernetes.helm-path.mac": "/Users/jhonnatha/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+      "vs-kubernetes.minikube-path.mac": "/Users/jhonnatha/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+      "vs-kubernetes.draft-path.mac": "/Users/jhonnatha/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gopls": {
+      "usePlaceholders": true
+    },
+    "[go]": {
+      // "editor.snippetSuggestions": "none",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+      },
+  },
+  "go.lintTool": "golangci-lint",
+  "go.useLanguageServer": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "tabnine.experimentalAutoImports": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "terminal.integrated.rendererType": "dom",
+  "window.zoomLevel": 0
+}
